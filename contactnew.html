@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Map</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .footer{
+  background-color: #4da992;
+}
+body{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+form{
+    padding: 10px;
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Your content goes here -->
+    <div class="container mt-5">
+        <h1>Welcome to Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <label for="name">CNIC Number:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your CNIC">
+            </div>
+            <div class="form-group">
+                <label for="name">WhatsApp Number:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your WhatsApp Number">
+            </div>
+            <div class="form-group">
+                <label for="email">Your E-Mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+            </div>
+            <!-- Add more form fields as needed -->
+    
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <h2>Map</h2>
+       
+        <div id="map" style="height: 400px;"></div>
+    </div>
+<!-- Add Bootstrap and jQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Add Google Maps API Script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<script>
+    function initMap() {
+        // Your map initialization code goes here
+        // Example: 
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 40.7128, lng: -74.0060 }, // Default: New York City
+            zoom: 12 // Adjust the zoom level as needed
+        });
+    }
+</script>
+<br>
+
+<div class="card text-center fbc footer">
+    <div class="card-header">
+      Welcome
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">SAIF-RENT-A-CAR</h5>
+     <h4 class="card-text">We have All kind of cars  For outside tours and  For airport pickup and dropoff</h4>
+      <a href="book your car.html" class="btn btn-primary">Go Booking</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+      2 days ago
+    </div>
+  </div>
+        
+</body>
+</html>
